@@ -1,0 +1,801 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>GameHub | Play Free Online Games</title>
+
+    <meta name="description" content="Explore and play 24 exciting free online games at GameHub. Racing, arcade, puzzle and adventure games.">
+
+    <meta name="theme-color" content="#090b10">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- New CSS -->
+    <link rel="stylesheet" href="style_new.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="main-header">
+    <div class="header-container">
+
+        <a href="index-new.html" class="brand">
+            <span class="brand-icon">🎮</span>
+            <span>GAME<span class="brand-highlight">HUB</span></span>
+        </a>
+
+        <nav class="main-nav" id="mainNav">
+            <a href="#home" class="nav-link active">Home</a>
+            <a href="#games" class="nav-link">All Games</a>
+            <a href="#categories" class="nav-link">Categories</a>
+            <a href="#popular" class="nav-link">Popular</a>
+        </nav>
+
+        <div class="header-actions">
+            <button class="icon-button" id="searchToggle" aria-label="Search">
+                🔍
+            </button>
+
+            <button class="icon-button" id="favoritesToggle" aria-label="Favorites">
+                ♡
+            </button>
+
+            <button class="icon-button menu-toggle" id="menuToggle" aria-label="Open menu">
+                ☰
+            </button>
+        </div>
+
+    </div>
+</header>
+
+
+<!-- ================= MAIN ================= -->
+
+<main>
+
+<!-- ================= HERO SECTION ================= -->
+
+<section class="hero-section" id="home">
+
+    <div class="hero-content">
+
+        <span class="hero-label">
+            ✦ YOUR ULTIMATE GAMING DESTINATION
+        </span>
+
+        <h1>
+            Play More.<br>
+            <span>Enjoy More.</span>
+        </h1>
+
+        <p>
+            Discover amazing games, explore new adventures
+            and enjoy endless entertainment in one place.
+        </p>
+
+        <div class="hero-actions">
+
+            <a href="#games" class="primary-button">
+                Explore Games <span>→</span>
+            </a>
+
+            <a href="#categories" class="secondary-button">
+                Browse Categories
+            </a>
+
+        </div>
+
+        <div class="hero-stats">
+
+            <div class="stat-item">
+                <strong>24+</strong>
+                <span>Games</span>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+                <strong>Free</strong>
+                <span>To Play</span>
+            </div>
+
+            <div class="stat-divider"></div>
+
+            <div class="stat-item">
+                <strong>24/7</strong>
+                <span>Entertainment</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="hero-visual">
+
+        <div class="hero-image-wrapper">
+            <img
+                src="assets/bg.jpg"
+                alt="GameHub Gaming"
+                class="hero-image"
+            >
+        </div>
+
+        <div class="floating-card floating-card-top">
+            <span>🎮</span>
+            <div>
+                <strong>Game On!</strong>
+                <small>Choose your game</small>
+            </div>
+        </div>
+
+        <div class="floating-card floating-card-bottom">
+            <span>⚡</span>
+            <div>
+                <strong>Unlimited Fun</strong>
+                <small>Play your favourites</small>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SEARCH SECTION ================= -->
+
+<section class="search-section" id="searchSection">
+
+    <div class="search-box">
+
+        <span class="search-icon">⌕</span>
+
+        <input
+            type="search"
+            id="gameSearch"
+            placeholder="Search your favourite games..."
+            autocomplete="off"
+        >
+
+        <button id="clearSearch" class="clear-search" aria-label="Clear search">
+            ✕
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CATEGORIES ================= -->
+
+<section class="categories-section section-container" id="categories">
+
+    <div class="section-heading">
+        <div>
+            <span class="section-label">EXPLORE BY TYPE</span>
+            <h2>Game Categories</h2>
+        </div>
+    </div>
+
+    <div class="category-grid">
+
+        <button class="category-card active" data-category="all">
+            <span class="category-icon">🎮</span>
+            <span>All Games</span>
+        </button>
+
+        <button class="category-card" data-category="arcade">
+            <span class="category-icon">👾</span>
+            <span>Arcade</span>
+        </button>
+
+        <button class="category-card" data-category="racing">
+            <span class="category-icon">🏎️</span>
+            <span>Racing</span>
+        </button>
+
+        <button class="category-card" data-category="puzzle">
+            <span class="category-icon">🧩</span>
+            <span>Puzzle</span>
+        </button>
+
+        <button class="category-card" data-category="sports">
+            <span class="category-icon">⚽</span>
+            <span>Sports</span>
+        </button>
+
+        <button class="category-card" data-category="adventure">
+            <span class="category-icon">🚀</span>
+            <span>Adventure</span>
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FEATURED GAME ================= -->
+
+<section class="featured-section section-container" id="popular">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-label">HANDPICKED FOR YOU</span>
+            <h2>Featured Game</h2>
+        </div>
+
+    </div>
+
+    <a href="gamedetails/pacman.html" class="featured-card">
+
+        <img src="assets/PacMan.jpg" alt="Pac-Man">
+
+        <div class="featured-overlay">
+
+            <span class="featured-tag">FEATURED GAME</span>
+
+            <h2>Pac-Man Arcade</h2>
+
+            <p>
+                Enter the maze, collect points and enjoy
+                this classic arcade adventure.
+            </p>
+
+            <span class="featured-play">
+                Play Now →
+            </span>
+
+        </div>
+
+    </a>
+
+</section>
+
+
+<!-- ================= ALL GAMES ================= -->
+
+<section class="games-section section-container" id="games">
+
+    <div class="section-heading">
+
+        <div>
+            <span class="section-label">DISCOVER YOUR NEXT GAME</span>
+            <h2>Explore Games</h2>
+            <p class="section-description">
+                Find your favourite game and start playing.
+            </p>
+        </div>
+
+        <div class="games-controls">
+
+            <select id="gameSort" aria-label="Sort games">
+                <option value="default">Default Order</option>
+                <option value="az">Name: A to Z</option>
+                <option value="za">Name: Z to A</option>
+            </select>
+
+        </div>
+
+    </div>
+
+
+    <div class="games-grid" id="gamesGrid">
+
+        <!-- GAME 1 -->
+        <a href="gamedetails/snake.html"
+           class="game-card"
+           data-name="Cyber Snake 2077"
+           data-category="arcade">
+
+            <div class="game-image">
+                <img src="assets/snake.jpg" alt="Cyber Snake 2077" loading="lazy">
+                <span class="game-badge">ARCADE</span>
+            </div>
+
+            <div class="game-info">
+                <h3>Cyber Snake 2077</h3>
+                <span>Arcade Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 2 -->
+        <a href="gamedetails/pacman.html"
+           class="game-card"
+           data-name="Pac-Man Arcade"
+           data-category="arcade">
+
+            <div class="game-image">
+                <img src="assets/PacMan.jpg" alt="Pac-Man" loading="lazy">
+                <span class="game-badge">CLASSIC</span>
+            </div>
+
+            <div class="game-info">
+                <h3>Pac-Man Arcade</h3>
+                <span>Arcade Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 3 -->
+        <a href="gamedetails/bingo.html"
+           class="game-card"
+           data-name="Bingo"
+           data-category="puzzle">
+
+            <div class="game-image">
+                <img src="assets/bingo.jpg" alt="Bingo" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Bingo</h3>
+                <span>Puzzle Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 4 -->
+        <a href="gamedetails/flappy-bird.html"
+           class="game-card"
+           data-name="Flappy Bird"
+           data-category="arcade">
+
+            <div class="game-image">
+                <img src="assets/bird.jpg" alt="Flappy Bird" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Flappy Bird</h3>
+                <span>Arcade Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 5 -->
+        <a href="gamedetails/tictactoe.html"
+           class="game-card"
+           data-name="Tic Tac Toe AI"
+           data-category="puzzle">
+
+            <div class="game-image">
+                <img src="assets/tictactoe.jpg" alt="Tic Tac Toe" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Tic Tac Toe AI</h3>
+                <span>Puzzle Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 6 -->
+        <a href="gamedetails/archery.html"
+           class="game-card"
+           data-name="Archery World Tour"
+           data-category="sports">
+
+            <div class="game-image">
+                <img src="assets/ArcheryWorldTour.jpg" alt="Archery World Tour" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Archery World Tour</h3>
+                <span>Sports Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 7 -->
+        <a href="gamedetails/bubbletower3d.html"
+           class="game-card"
+           data-name="Bubble Tower 3D"
+           data-category="arcade">
+
+            <div class="game-image">
+                <img src="assets/BubbleTower3D.jpg" alt="Bubble Tower 3D" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Bubble Tower 3D</h3>
+                <span>Arcade Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 8 -->
+        <a href="gamedetails/fun-race-3d.html"
+           class="game-card"
+           data-name="Fun Race 3D"
+           data-category="racing">
+
+            <div class="game-image">
+                <img src="assets/Fun Race 3D.jpg" alt="Fun Race 3D" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Fun Race 3D</h3>
+                <span>Racing Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 9 -->
+        <a href="gamedetails/CarsArena.html"
+           class="game-card"
+           data-name="Cars Arena"
+           data-category="racing">
+
+            <div class="game-image">
+                <img src="assets/Cars Arena.jpg" alt="Cars Arena" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Cars Arena</h3>
+                <span>Racing Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 10 -->
+        <a href="gamedetails/JellyRun2048.html"
+           class="game-card"
+           data-name="Jelly Run 2048"
+           data-category="puzzle">
+
+            <div class="game-image">
+                <img src="assets/Jelly Run 2048.jpg" alt="Jelly Run 2048" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Jelly Run 2048</h3>
+                <span>Puzzle Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 11 -->
+        <a href="gamedetails/TowerCrash3D.html"
+           class="game-card"
+           data-name="Tower Crash 3D"
+           data-category="arcade">
+
+            <div class="game-image">
+                <img src="assets/Tower Crash 3D.jpg" alt="Tower Crash 3D" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Tower Crash 3D</h3>
+                <span>Arcade Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 12 -->
+        <a href="gamedetails/FashionBattle.html"
+           class="game-card"
+           data-name="Fashion Battle"
+           data-category="adventure">
+
+            <div class="game-image">
+                <img src="assets/Fashion Battle.jpg" alt="Fashion Battle" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Fashion Battle</h3>
+                <span>Casual Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 13 -->
+        <a href="gamedetails/DriftDudes.html"
+           class="game-card"
+           data-name="Drift Dudes"
+           data-category="racing">
+
+            <div class="game-image">
+                <img src="assets/Drift Dudes.jpg" alt="Drift Dudes" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Drift Dudes</h3>
+                <span>Racing Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 14 -->
+        <a href="gamedetails/BubbleShooter3D.html"
+           class="game-card"
+           data-name="Bubble Shooter 3D"
+           data-category="puzzle">
+
+            <div class="game-image">
+                <img src="assets/Bubble Shooter 3D.jpg" alt="Bubble Shooter 3D" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Bubble Shooter 3D</h3>
+                <span>Puzzle Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 15 -->
+        <a href="gamedetails/PacMaze.html"
+           class="game-card"
+           data-name="Pac Maze"
+           data-category="arcade">
+
+            <div class="game-image">
+                <img src="assets/Pac Maze.jpg" alt="Pac Maze" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Pac Maze</h3>
+                <span>Arcade Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 16 -->
+        <a href="gamedetails/ColorBump3D.html"
+           class="game-card"
+           data-name="Color Bump 3D"
+           data-category="arcade">
+
+            <div class="game-image">
+                <img src="assets/Color Bump 3D.jpg" alt="Color Bump 3D" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Color Bump 3D</h3>
+                <span>Arcade Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 17 -->
+        <a href="gamedetails/TableTennis.html"
+           class="game-card"
+           data-name="Table Tennis World Tour"
+           data-category="sports">
+
+            <div class="game-image">
+                <img src="assets/Table Tennis World Tour.jpg" alt="Table Tennis" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Table Tennis World Tour</h3>
+                <span>Sports Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 18 -->
+        <a href="gamedetails/Barricade.html"
+           class="game-card"
+           data-name="Barricade"
+           data-category="puzzle">
+
+            <div class="game-image">
+                <img src="assets/Barricade.png" alt="Barricade" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Barricade</h3>
+                <span>Puzzle Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 19 -->
+        <a href="gamedetails/SpiderFreecell.html"
+           class="game-card"
+           data-name="Spider Freecell"
+           data-category="puzzle">
+
+            <div class="game-image">
+                <img src="assets/Spider Freecell.jpg" alt="Spider Freecell" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Spider Freecell</h3>
+                <span>Card Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 20 -->
+        <a href="gamedetails/taj.html"
+           class="game-card"
+           data-name="Taj"
+           data-category="adventure">
+
+            <div class="game-image">
+                <img src="assets/tajExample.jpg" alt="Taj" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Taj</h3>
+                <span>Adventure Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 21 -->
+        <a href="gamedetails/RabbitPunch.html"
+           class="game-card"
+           data-name="Rabbit Punch"
+           data-category="arcade">
+
+            <div class="game-image">
+                <img src="assets/RabbitPunch.jpg" alt="Rabbit Punch" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Rabbit Punch</h3>
+                <span>Arcade Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 22 -->
+        <a href="gamedetails/OmNomRun.html"
+           class="game-card"
+           data-name="Om Nom Run"
+           data-category="adventure">
+
+            <div class="game-image">
+                <img src="assets/Om Nom Run.jpg" alt="Om Nom Run" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Om Nom Run</h3>
+                <span>Adventure Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 23 -->
+        <a href="gamedetails/cannonballs3D.html"
+           class="game-card"
+           data-name="Cannon Balls 3D"
+           data-category="arcade">
+
+            <div class="game-image">
+                <img src="assets/cannonballs3D.jpg" alt="Cannon Balls 3D" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Cannon Balls 3D</h3>
+                <span>Arcade Game</span>
+            </div>
+        </a>
+
+
+        <!-- GAME 24 -->
+        <a href="gamedetails/Store.html"
+           class="game-card"
+           data-name="Supermarket Simulator Store Manager"
+           data-category="adventure">
+
+            <div class="game-image">
+                <img src="assets/store.jpg" alt="Supermarket Simulator" loading="lazy">
+            </div>
+
+            <div class="game-info">
+                <h3>Supermarket Simulator</h3>
+                <span>Simulation Game</span>
+            </div>
+        </a>
+
+    </div>
+
+
+    <!-- NO RESULTS -->
+    <div class="no-results" id="noResults" hidden>
+        <span>🎮</span>
+        <h3>No Games Found</h3>
+        <p>Try searching with another game name.</p>
+    </div>
+
+</section>
+
+
+<!-- ================= CALL TO ACTION ================= -->
+
+<section class="cta-section section-container">
+
+    <div class="cta-content">
+
+        <span class="section-label">READY TO PLAY?</span>
+
+        <h2>Your Next Adventure Starts Here.</h2>
+
+        <p>
+            Explore the collection and discover your next
+            favourite game.
+        </p>
+
+        <a href="#games" class="primary-button">
+            Start Playing →
+        </a>
+
+    </div>
+
+</section>
+
+</main>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="main-footer">
+
+    <div class="footer-container">
+
+        <div class="footer-brand">
+
+            <a href="#home" class="brand">
+                <span class="brand-icon">🎮</span>
+                <span>GAME<span class="brand-highlight">HUB</span></span>
+            </a>
+
+            <p>
+                Your ultimate destination for free online games.
+                Play, explore and enjoy.
+            </p>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Quick Links</h3>
+
+            <a href="#home">Home</a>
+            <a href="#games">All Games</a>
+            <a href="#categories">Categories</a>
+
+        </div>
+
+
+        <div class="footer-links">
+
+            <h3>Information</h3>
+
+            <a href="allpolicy/privacy-policy.html">Privacy Policy</a>
+            <a href="allpolicy/terms-of-service.html">Terms of Service</a>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>
+            © 2026 GameHub Studio. All Rights Reserved.
+        </p>
+
+        <a href="#home">Back to Top ↑</a>
+
+    </div>
+
+</footer>
+
+
+<!-- New JavaScript -->
+<script src="script_new.js" defer></script>
+
+</body>
+</html>
